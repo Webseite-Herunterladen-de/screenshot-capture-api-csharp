@@ -4,14 +4,14 @@ All URIs are relative to *https://api.webseite-herunterladen.de/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**PlaceScreenshotOrderAuthenticated**](ScreenshotApi.md#placescreenshotorderauthenticated) | **GET** /capture/{token}/{hash} | 
-[**PlaceScreenshotOrderUnauthenticated**](ScreenshotApi.md#placescreenshotorderunauthenticated) | **GET** /capture/{token} | 
+[**CaptureScreenshotAuthenticated**](ScreenshotApi.md#capturescreenshotauthenticated) | **GET** /capture/{token}/{hash} | 
+[**CaptureScreenshotUnauthenticated**](ScreenshotApi.md#capturescreenshotunauthenticated) | **GET** /capture/{token} | 
 
 
 
-## PlaceScreenshotOrderAuthenticated
+## CaptureScreenshotAuthenticated
 
-> System.IO.Stream PlaceScreenshotOrderAuthenticated (string token, string hash, string url, string fileType = null, long? ttl = null, bool? invalidate = null, bool? full = null, bool? lazyloadScroll = null, long? delay = null, long? width = null, long? height = null, long? quality = null, decimal? scale = null, long? x = null, long? y = null, bool? redirect = null, string language = null, bool? randomUserAgent = null, string userAgent = null, string headers = null, string cookies = null, string css = null, string js = null, string wait = null, string element = null, string timezone = null, string device = null, decimal? latitude = null, decimal? longitude = null, decimal? accuracy = null, string proxy = null, bool? adblock = null, bool? hideCookieBanners = null)
+> System.IO.Stream CaptureScreenshotAuthenticated (string token, string hash, string url, string fileType = null, long? ttl = null, bool? invalidate = null, bool? full = null, bool? lazyloadScroll = null, long? delay = null, long? width = null, long? height = null, long? quality = null, decimal? scale = null, long? x = null, long? y = null, bool? redirect = null, string language = null, bool? randomUserAgent = null, string userAgent = null, string headers = null, string cookies = null, string css = null, string js = null, string wait = null, string element = null, string timezone = null, string device = null, decimal? latitude = null, decimal? longitude = null, decimal? accuracy = null, string proxy = null, bool? adblock = null, bool? hideCookieBanners = null)
 
 
 
@@ -28,7 +28,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class PlaceScreenshotOrderAuthenticatedExample
+    public class CaptureScreenshotAuthenticatedExample
     {
         public static void Main()
         {
@@ -70,12 +70,12 @@ namespace Example
 
             try
             {
-                System.IO.Stream result = apiInstance.PlaceScreenshotOrderAuthenticated(token, hash, url, fileType, ttl, invalidate, full, lazyloadScroll, delay, width, height, quality, scale, x, y, redirect, language, randomUserAgent, userAgent, headers, cookies, css, js, wait, element, timezone, device, latitude, longitude, accuracy, proxy, adblock, hideCookieBanners);
+                System.IO.Stream result = apiInstance.CaptureScreenshotAuthenticated(token, hash, url, fileType, ttl, invalidate, full, lazyloadScroll, delay, width, height, quality, scale, x, y, redirect, language, randomUserAgent, userAgent, headers, cookies, css, js, wait, element, timezone, device, latitude, longitude, accuracy, proxy, adblock, hideCookieBanners);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling ScreenshotApi.PlaceScreenshotOrderAuthenticated: " + e.Message );
+                Debug.Print("Exception when calling ScreenshotApi.CaptureScreenshotAuthenticated: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -150,9 +150,9 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## PlaceScreenshotOrderUnauthenticated
+## CaptureScreenshotUnauthenticated
 
-> System.IO.Stream PlaceScreenshotOrderUnauthenticated (string token, string url, string fileType = null, long? ttl = null, bool? invalidate = null, bool? full = null, bool? lazyloadScroll = null, long? delay = null, long? width = null, long? height = null, long? quality = null, decimal? scale = null, long? x = null, long? y = null, bool? redirect = null, string language = null, bool? randomUserAgent = null, string userAgent = null, string headers = null, string cookies = null, string css = null, string js = null, string wait = null, string element = null, string timezone = null, string device = null, decimal? latitude = null, decimal? longitude = null, decimal? accuracy = null, string proxy = null, bool? adblock = null, bool? hideCookieBanners = null)
+> System.IO.Stream CaptureScreenshotUnauthenticated (string token, string url, string fileType = null, long? ttl = null, bool? invalidate = null, bool? full = null, bool? lazyloadScroll = null, long? delay = null, long? width = null, long? height = null, long? quality = null, decimal? scale = null, long? x = null, long? y = null, bool? redirect = null, string language = null, bool? randomUserAgent = null, string userAgent = null, string headers = null, string cookies = null, string css = null, string js = null, string wait = null, string element = null, string timezone = null, string device = null, decimal? latitude = null, decimal? longitude = null, decimal? accuracy = null, string proxy = null, bool? adblock = null, bool? hideCookieBanners = null)
 
 
 
@@ -169,7 +169,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class PlaceScreenshotOrderUnauthenticatedExample
+    public class CaptureScreenshotUnauthenticatedExample
     {
         public static void Main()
         {
@@ -210,12 +210,12 @@ namespace Example
 
             try
             {
-                System.IO.Stream result = apiInstance.PlaceScreenshotOrderUnauthenticated(token, url, fileType, ttl, invalidate, full, lazyloadScroll, delay, width, height, quality, scale, x, y, redirect, language, randomUserAgent, userAgent, headers, cookies, css, js, wait, element, timezone, device, latitude, longitude, accuracy, proxy, adblock, hideCookieBanners);
+                System.IO.Stream result = apiInstance.CaptureScreenshotUnauthenticated(token, url, fileType, ttl, invalidate, full, lazyloadScroll, delay, width, height, quality, scale, x, y, redirect, language, randomUserAgent, userAgent, headers, cookies, css, js, wait, element, timezone, device, latitude, longitude, accuracy, proxy, adblock, hideCookieBanners);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling ScreenshotApi.PlaceScreenshotOrderUnauthenticated: " + e.Message );
+                Debug.Print("Exception when calling ScreenshotApi.CaptureScreenshotUnauthenticated: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

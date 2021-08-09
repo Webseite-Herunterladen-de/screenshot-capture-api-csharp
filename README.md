@@ -115,12 +115,12 @@ namespace Example
 
             try
             {
-                System.IO.Stream result = apiInstance.PlaceScreenshotOrderAuthenticated(token, hash, url, fileType, ttl, invalidate, full, lazyloadScroll, delay, width, height, quality, scale, x, y, redirect, language, randomUserAgent, userAgent, headers, cookies, css, js, wait, element, timezone, device, latitude, longitude, accuracy, proxy, adblock, hideCookieBanners);
+                System.IO.Stream result = apiInstance.CaptureScreenshotAuthenticated(token, hash, url, fileType, ttl, invalidate, full, lazyloadScroll, delay, width, height, quality, scale, x, y, redirect, language, randomUserAgent, userAgent, headers, cookies, css, js, wait, element, timezone, device, latitude, longitude, accuracy, proxy, adblock, hideCookieBanners);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling ScreenshotApi.PlaceScreenshotOrderAuthenticated: " + e.Message );
+                Debug.Print("Exception when calling ScreenshotApi.CaptureScreenshotAuthenticated: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -136,8 +136,8 @@ All URIs are relative to *https://api.webseite-herunterladen.de/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ScreenshotApi* | [**PlaceScreenshotOrderAuthenticated**](docs/ScreenshotApi.md#placescreenshotorderauthenticated) | **GET** /capture/{token}/{hash} | 
-*ScreenshotApi* | [**PlaceScreenshotOrderUnauthenticated**](docs/ScreenshotApi.md#placescreenshotorderunauthenticated) | **GET** /capture/{token} | 
+*ScreenshotApi* | [**CaptureScreenshotAuthenticated**](docs/ScreenshotApi.md#capturescreenshotauthenticated) | **GET** /capture/{token}/{hash} | 
+*ScreenshotApi* | [**CaptureScreenshotUnauthenticated**](docs/ScreenshotApi.md#capturescreenshotunauthenticated) | **GET** /capture/{token} | 
 
 
 ## Documentation for Models
