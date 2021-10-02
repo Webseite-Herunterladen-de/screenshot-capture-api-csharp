@@ -1,7 +1,7 @@
 /* 
  * Screenshot Capture API
  *
- * Webseite-Herunterladen.de Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect.
+ * screenshot-capture-api.com Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect.
  *
  * OpenAPI spec version: 1.0.0
  * 
@@ -114,7 +114,7 @@ namespace IO.Swagger.Client
         public Configuration()
         {
             UserAgent = "Swagger-Codegen/1.0.0/csharp";
-            BasePath = "https://api.webseite-herunterladen.de/v1";
+            BasePath = "https://api.screenshot-capture-api.com/v1";
             DefaultHeader = new ConcurrentDictionary<string, string>();
             ApiKey = new ConcurrentDictionary<string, string>();
             ApiKeyPrefix = new ConcurrentDictionary<string, string>();
@@ -129,7 +129,7 @@ namespace IO.Swagger.Client
             IDictionary<string, string> defaultHeader,
             IDictionary<string, string> apiKey,
             IDictionary<string, string> apiKeyPrefix,
-            string basePath = "https://api.webseite-herunterladen.de/v1") : this()
+            string basePath = "https://api.screenshot-capture-api.com/v1") : this()
         {
             if (string.IsNullOrWhiteSpace(basePath))
                 throw new ArgumentException("The provided basePath is invalid.", "basePath");

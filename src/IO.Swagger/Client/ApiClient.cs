@@ -1,7 +1,7 @@
 /* 
  * Screenshot Capture API
  *
- * Webseite-Herunterladen.de Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect.
+ * screenshot-capture-api.com Screenshot Capture is a very simple but powerful screenshot API that anyone can easily use to create pixel-perfect website screenshots. It always uses a recent version of Chrome to ensure that all modern web features are fully supported and rendering is exactly as your customers would expect.
  *
  * OpenAPI spec version: 1.0.0
  * 
@@ -52,12 +52,12 @@ namespace IO.Swagger.Client
         public ApiClient()
         {
             Configuration = IO.Swagger.Client.Configuration.Default;
-            RestClient = new RestClient("https://api.webseite-herunterladen.de/v1");
+            RestClient = new RestClient("https://api.screenshot-capture-api.com/v1");
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default base path (https://api.webseite-herunterladen.de/v1).
+        /// with default base path (https://api.screenshot-capture-api.com/v1).
         /// </summary>
         /// <param name="config">An instance of Configuration.</param>
         public ApiClient(Configuration config)
@@ -72,7 +72,7 @@ namespace IO.Swagger.Client
         /// with default configuration.
         /// </summary>
         /// <param name="basePath">The base path.</param>
-        public ApiClient(String basePath = "https://api.webseite-herunterladen.de/v1")
+        public ApiClient(String basePath = "https://api.screenshot-capture-api.com/v1")
         {
            if (String.IsNullOrEmpty(basePath))
                 throw new ArgumentException("basePath cannot be empty");
